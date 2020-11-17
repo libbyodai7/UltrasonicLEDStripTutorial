@@ -139,4 +139,4 @@ Here we are turning all the LED strip off if the distance is less than 40cm.
 
 Here we use a for loop to turn each light to be red until we get to the pixelLength value we calculated before.
 
-And that's it! If you're got this working see if you can change some of the values in the code to try and change the led color, make the leds last longer or make the led "follow" the object.
+Upload it to the Arduino and that's it! If you're got this working see if you can change some of the values in the code to try and change the led color, make the leds last longer or make the led "follow" the object.
