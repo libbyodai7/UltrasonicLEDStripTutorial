@@ -20,15 +20,15 @@ Connect the components to the Arduino Uno. I use a mini breadboard so I can conn
 
 # LED Lights
 
-5V - 5V 
-DI - PIN 6
-GND - GND
+* 5V - 5V 
+* DI - PIN 6
+* GND - GND
 
 # Ultrasonic Sensor
-VCC-5V
-Trig - PIN 3
-Echo - PIN2
-GND - GND
+* VCC-5V
+* Trig - PIN 3
+* Echo - PIN2
+* GND - GND
 
 # Code
 
