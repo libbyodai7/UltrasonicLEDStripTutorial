@@ -2,6 +2,8 @@
 A tutorial for Product Design Yr 2 students showing how to connect an LED Strip to an ultrasonic sensor via Arduino.
 This project creates a sensor that lights up like a parking light, more of the strip will light up the closer an object is to the sensor. 
 
+![video of the project](https://github.com/libbyodai7/UltrasonicLEDStripTutorial/blob/main/ledUltra.gif)
+
 # Things you will need:
 
 * An Arduino (I use an Uno R3)
@@ -37,6 +39,34 @@ In the Arduino IDE go to
 Tools -> Manage Libraries
 Then search for Adafruit NeoPixel and it should come up.
 
-Once installed
+Once installed download the code files in this project and open them in Arduino IDE.
+
+```
+#define echoPin 2 // attach pin D2 Arduino to pin Echo of HC-SR04
+#define trigPin 3 //attach pin D3 Arduino to pin Trig of HC-SR04
+
+// defines variables
+long duration; // variable for the duration of sound wave travel
+int distance; // variable for the distance measurement
+int pixelLength; //variable to hold the number of pixels that need to light up
+
+
+#include <Adafruit_NeoPixel.h>
+#ifdef __AVR__
+ #include <avr/power.h> // Required for 16 MHz Adafruit Trinket
+#endif
+
+// Which pin on the Arduino is connected to the NeoPixels?
+// On a Trinket or Gemma we suggest changing this to 1:
+#define LED_PIN    6
+
+// How many NeoPixels are attached to the Arduino?
+#define LED_COUNT 60
+
+// Declare our NeoPixel strip object:
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
+```
+Defines some of the starting variables. We set the pins for the sensor and LED strip. We also define distance variables and vaiables to hold the amount of LEDS we want to light up.
+
 
 
